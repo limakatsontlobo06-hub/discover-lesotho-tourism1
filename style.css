@@ -1,0 +1,449 @@
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color:black;
+    line-height: 1.6;
+}
+/* HEADER */
+header {
+    background-color: skyblue;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+header h1 {
+    color: blue;
+    font-size: 28px;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+header nav a {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: lightblue;
+    color: white;
+    border-radius: 6px;
+    font-weight: bold;
+    white-space: nowrap;
+   
+}
+
+header nav a:hover {
+    background-color: blue;
+    color: white;
+}
+
+
+
+main {
+    padding-top: 25px;
+    padding-bottom: 30px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: black;
+    margin-bottom: 20px;
+}
+
+
+
+.home-page {
+    background-image: url("./images/60.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100px;
+}
+
+
+body.light-mode {
+    background-color: white;
+    color: black;
+}
+
+/* DARK MODE */
+body.dark-mode {
+    background-color: #222;
+    color: white;
+}
+
+/* Dark mode headings and paragraphs */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode p,
+body.dark-mode label {
+    color: white;
+}
+
+/* Dark mode cards */
+body.dark-mode .destination {
+    background-color: #333;
+    color: white;
+}
+
+
+
+
+
+
+.about-page {
+    background-color: white;
+}
+
+.about-page .accommodation-item {
+    margin-bottom: 20px;
+}
+
+.about-page .accommodation-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.about-page .card {
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+
+.about-page .card-body {
+    padding: 20px;
+}
+
+.about-page #placeSearch {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.date-time {
+    text-align: center;
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+
+
+
+.product-page {
+    background-color: white;
+}
+
+
+
+
+
+.product-page #productSearch {
+    border: 2px solid skyblue;
+    border-radius: 6px;
+    padding: 8px;
+}
+
+.product-page #productMessage {
+    color: deepskyblue;
+    font-weight: bold;
+}
+
+
+
+
+.product-page .product-item {
+    display: flex;
+}
+
+.product-page .product-item .card {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.product-page .product-item .product-image {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    background-color: white;
+}
+
+.activity-box {
+    padding: 20px;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.pink {
+    background-color: white;
+}
+
+.blue {
+    background-color: white;
+}
+
+.activity-video {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    display: block;
+}
+
+.activity-box p {
+    margin-top: 10px;
+}
+
+.image {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+.image > div {
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    
+}
+
+.image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+}
+
+
+
+
+
+.contact-page {
+    background-color: white;
+}
+
+.contact-page form,
+.contact-page .accommodation-form {
+    background-color: white;
+    padding: 25px;
+    margin: 25px auto;
+    border-radius: 10px;
+    
+    max-width: 650px;
+}
+
+.contact-page form h3,
+.contact-page h2 {
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-page label {
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 7px;
+    color: black;
+}
+
+.contact-page input:not([type="radio"]),
+.contact-page select,
+.contact-page textarea {
+    width: 100%;
+    padding: 11px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+   
+}
+.contact-page input:focus,
+.contact-page textarea:focus {
+    border-color: skyblue;
+    outline: none;
+}
+
+.contact-page input[type="radio"] {
+    margin: 8px;
+}
+
+.contact-page button {
+    background-color: blue;
+    color: white;
+    padding: 11px 22px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+
+
+
+
+
+.footer {
+    display: block;
+    width: 100%;
+    background-color: skyblue;
+    color: green;
+    text-align: center;
+    padding: 18px 10px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.footer p {
+    color: darkblue;
+    margin: 0;
+    font-size: 16px;
+}
+
+
+
+
+@media screen and (max-width: 992px) {
+
+    header {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    header nav {
+        gap: 8px;
+    }
+
+    header nav a {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+
+    .image {
+        width: 95%;
+        gap: 15px;
+    }
+
+    .activity-video {
+        height: 250px;
+    }
+
+    .product-page .product-item .product-image {
+        height: 250px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+       header {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    header nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    header nav a {
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+
+    
+    main {
+        padding: 15px;
+    }
+
+    section {
+        margin-bottom: 20px;
+    }
+
+    
+    .home-page {
+        background-attachment: scroll;
+        min-height: 100vh;
+    }
+
+    
+    .image {
+        grid-template-columns: 1fr;
+        width: 95%;
+        gap: 15px;
+    }
+
+    .image img {
+        height: 230px;
+    }
+
+   
+    .activity-box {
+        padding: 15px;
+    }
+
+    .activity-video {
+        height: 220px;
+    }
+
+    .product-page .product-item {
+        display: block;
+    }
+
+    .product-page .product-item .product-image {
+        height: 220px;
+    }
+
+    
+    .contact-page form,
+    .contact-page .accommodation-form {
+        width: 100%;
+        padding: 15px;
+    }
+
+    
+    .footer {
+        padding: 15px 8px;
+    }
+
+    .footer p {
+        font-size: 14px;
+    }
+}
+

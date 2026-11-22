@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Discover Lesotho</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="home-page">
+
+
+    <header>
+        <img src="flag.jpg"style="width: 60px;height: 60px">
+
+        <h1>DISCOVER LESOTHO</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="product.html">Product</a>
+            <a href="activities.html">Activities</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        
+        <section class="welcome">
+
+            <div class="welcome-content">
+
+                <h2>WELCOME TO LESOTHO</h2>
+
+                <p>
+                    Discover the beauty of the Kingdom in the Sky.
+                    Explore beautiful mountains, Basotho culture,
+                    traditional food and amazing tourist attractions.
+                </p>
+
+            </div>
+
+        </section>
+
+        
+        <div class="theme-container">
+
+            <button type="button" onclick="changeTheme()" id="themeButton">
+                Switch to Dark Mode
+            </button>
+
+        </div>
+
+        
+        <img src="60.jpg"width="100%"
+             alt="Beautiful scenery of Lesotho"
+             class="home-image">
+
+    </main>
+
+    
+    <footer class="footer">
+
+        <p>
+            &copy; 2026 Discover Lesotho Tourism. All rights reserved.
+        </p>
+
+    </footer>
+
+    
+    <script>
+
+        
+        function changeTheme() {
+
+            document.body.classList.toggle("dark-mode");
+
+            if (document.body.classList.contains("dark-mode")) {
+
+                document.getElementById("themeButton").innerHTML =
+                    "Switch to Light Mode";
+
+            } else {
+
+                document.getElementById("themeButton").innerHTML =
+                    "Switch to Dark Mode";
+
+            }
+
+        }
+
+    </script>
+
+</body>
+</html>

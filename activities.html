@@ -1,0 +1,411 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Basotho Activities - Discover Lesotho</title>
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="activities-page">
+
+    
+    <header>
+         <img src="5000.webp"style="width: 60px;height: 60px">
+
+        <h1>VIEW SOME BASOTHO ACTIVITIES</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="product.html">Product</a>
+            <a href="activities.html">Activities</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+    
+        <section class="container mt-4 mb-4">
+
+            <h2 class="text-center mb-3">
+                Find a Traditional Activity
+            </h2>
+
+            <input type="search"
+                   id="activitySearch"
+                   class="form-control"
+                   placeholder="Search for Bale, Mokhibo, Mohobelo or Makoloane"
+                   oninput="searchActivities()">
+
+            <p id="activityMessage" class="text-center mt-2"></p>
+
+        </section>
+
+
+
+        <section class="container mb-4 text-center">
+
+            <button type="button"
+                    id="videoButton"
+                    class="btn btn-primary"
+                    onclick="controlVideos()">
+
+                Pause All Videos
+
+            </button>
+
+        </section>
+
+
+        
+        <section class="container mb-5">
+
+            <h2 class="text-center mb-4">
+                Traditional Basotho Activities
+            </h2>
+
+            <div class="row g-4" id="activityList">
+
+
+                
+                <div class="col-md-6 activity-item">
+
+                    <article class="card activity-box pink h-100">
+
+                        <div class="card-body">
+
+                            <h3 class="card-title">Bale</h3>
+
+                            <video controls class="activity-video" preload="metadata">
+
+                                <source src="bale.mp4" type="video/mp4">
+
+                                Your browser does not support video playback.
+
+                            </video>
+
+                            <p class="card-text">
+
+                                Bale are initiated Basotho girls who
+                                take part in traditional singing and
+                                poetry. They can be seen walking and
+                                performing together while sharing
+                                songs and poems.
+
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+            
+                <div class="col-md-6 activity-item">
+
+                    <article class="card activity-box blue h-100">
+
+                        <div class="card-body">
+
+                            <h3 class="card-title">Mokhibo</h3>
+
+                            <video controls class="activity-video" preload="metadata">
+
+                                <source src="mokhibo.mp4" type="video/mp4">
+
+                                Your browser does not support video playback.
+
+                            </video>
+
+                            <p class="card-text">
+
+                                Mokhibo is a traditional dance performed
+                                by Basotho women while kneeling. The
+                                dancers move their shoulders and upper
+                                bodies to the rhythm of traditional songs.
+
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+            
+                <div class="col-md-6 activity-item">
+
+                    <article class="card activity-box pink h-100">
+
+                        <div class="card-body">
+
+                            <h3 class="card-title">Mohobelo</h3>
+
+                            <video controls class="activity-video" preload="metadata">
+
+                                <source src="mohobelo.mp4" type="video/mp4">
+
+                                Your browser does not support video playback.
+
+                            </video>
+
+                            <p class="card-text">
+
+                                Mohobelo is a traditional dance performed
+                                by Basotho men. It involves energetic
+                                movements, strong steps and singing.
+                                It is often performed during cultural
+                                celebrations.
+
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <div class="col-md-6 activity-item">
+
+                    <article class="card activity-box blue h-100">
+
+                        <div class="card-body">
+
+                            <h3 class="card-title">Makoloane</h3>
+
+                            <video controls class="activity-video" preload="metadata">
+
+                                <source src="makoloane.mp4" type="video/mp4">
+
+                                Your browser does not support video playback.
+
+                            </video>
+
+                            <p class="card-text">
+
+                                Makoloane are initiated Basotho boys
+                                who take part in traditional singing
+                                and cultural activities. Their songs
+                                help to keep Basotho traditions alive.
+
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+a
+        <        <section class="container mb-5">
+
+            <h2 class="text-center mb-4">
+                Learn More About Basotho Traditions
+            </h2>
+
+            <div class="accordion" id="activityAccordion">
+
+
+             
+                <div class="accordion-item">
+
+                    <h3 class="accordion-header">
+
+                        <button class="accordion-button"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#songs">
+
+                            Traditional Songs
+
+                        </button>
+
+                    </h3>
+
+                    <div id="songs"
+                         class="accordion-collapse collapse show"
+                         data-bs-parent="#activityAccordion">
+
+                        <div class="accordion-body">
+
+                            Traditional songs are used during celebrations,
+                            cultural events and other important occasions.
+                            They help pass stories and traditions from
+                            one generation to another.
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+         
+                <div class="accordion-item">
+
+                    <h3 class="accordion-header">
+
+                        <button class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#dances">
+
+                            Traditional Dances
+
+                        </button>
+
+                    </h3>
+
+                    <div id="dances"
+                         class="accordion-collapse collapse"
+                         data-bs-parent="#activityAccordion">
+
+                        <div class="accordion-body">
+
+                            Basotho traditional dances express culture,
+                            unity and history. Examples include Mokhibo
+                            and Mohobelo.
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+   
+    <footer class="footer">
+
+        <p>
+            &copy; 2026 Discover Lesotho Tourism. All rights reserved.
+        </p>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+   
+    <script>
+
+    
+        function searchActivities() {
+
+            let search = document.getElementById("activitySearch");
+
+            let activities = document.querySelectorAll(".activity-item");
+
+            let message = document.getElementById("activityMessage");
+
+            let value = search.value.toLowerCase();
+
+            let count = 0;
+
+            activities.forEach(function(activity) {
+
+                let name = activity.textContent.toLowerCase();
+
+                if (name.includes(value)) {
+
+                    activity.style.display = "";
+
+                    count++;
+
+                } else {
+
+                    activity.style.display = "none";
+
+                }
+
+            });
+
+            if (count === 0) {
+
+                message.innerHTML = "No activity found.";
+
+            } else {
+
+                message.innerHTML = count + " activities found.";
+
+            }
+
+        }
+
+
+    
+        function controlVideos() {
+
+            let videos = document.querySelectorAll("video");
+
+            let videoButton = document.getElementById("videoButton");
+
+            let allPaused = true;
+
+            videos.forEach(function(video) {
+
+                if (!video.paused) {
+
+                    allPaused = false;
+
+                }
+
+            });
+
+            if (allPaused) {
+
+                videos.forEach(function(video) {
+
+                    video.play();
+
+                });
+
+                videoButton.innerHTML = "Pause All Videos";
+
+            } else {
+
+                videos.forEach(function(video) {
+
+                    video.pause();
+
+                });
+
+                videoButton.innerHTML = "Play All Videos";
+
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>

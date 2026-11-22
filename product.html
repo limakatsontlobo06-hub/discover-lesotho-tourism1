@@ -1,0 +1,351 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Products</title>
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="product-page">
+
+    
+    <header>
+         <img src="3000.webp"style="width: 60px;height: 60px">
+
+        <h1>PRODUCTS FOR TOURISTS</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="product.html">Product</a>
+            <a href="activities.html">Activities</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+    
+        <section class="container mb-4">
+
+            <h2 class="text-center mb-3">Search for Product</h2>
+
+            <input type="search"
+                   id="productSearch"
+                   class="form-control"
+                   placeholder="Search for a product, e.g. Mafi"
+                   oninput="resetProductSearch()">
+
+            <button type="button"
+                    class="btn btn-primary mt-2"
+                    onclick="searchProduct()">
+
+                Search
+
+            </button>
+
+            <p id="accommodationMessage" class="text-center mt-2"></p>
+
+        </section>
+
+
+    
+        <section class="container mb-5">
+
+            <h2 class="text-center mb-4">Products Found in Lesotho</h2>
+
+            <div class="row g-4" id="productList">
+
+                
+                <div class="col-md-6 product-item">
+
+                    <article class="card h-100">
+
+                        <img src="mangangajane.jpg"
+                             class="card-img-top product-image"
+                             alt="Mangangajane traditional Basotho snack">
+
+                        <div class="card-body">
+
+                            <h3 class="card-title">Mangangajane</h3>
+
+                            <p class="card-text">
+                                These are traditional dried fruits. Basotho make
+                                them to preserve the fruits and prevent them
+                                from going bad. Mangangajane is a nice snack
+                                sold at affordable prices.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+    
+                <div class="col-md-6 product-item">
+
+                    <article class="card h-100">
+
+                        <img src="mafi.jpg"width= "100%"
+                             class="card-img-top product-image"
+                             alt="Traditional Basotho mafi sour milk">
+
+                        <div class="card-body">
+
+                            <h3 class="card-title">Mafi</h3>
+
+                            <p class="card-text">
+                                Mafi is traditional Basotho sour milk. It is
+                                made by allowing milk to ferment in a warm
+                                place. It is delicious and provides nutrients
+                                for the body.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+            
+                <div class="col-md-6 product-item">
+
+                    <article class="card h-100">
+
+                        <img src="botle.webp"
+                             class="card-img-top product-image"
+                             alt="Botle aloe vera Vaseline">
+
+                        <div class="card-body">
+
+                            <h3 class="card-title">Botle Vaseline</h3>
+
+                            <p class="card-text">
+                                Botle Vaseline is made using aloe vera.
+                                It helps moisturise the skin and gives
+                                the skin a healthy glow.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+            
+                <div class="col-md-6 product-item">
+
+                    <article class="card h-100">
+
+                        <img src="letlotlo.jpg"
+                             class="card-img-top product-image"
+                             alt="Letlotlo flour produced in Lesotho">
+
+                        <div class="card-body">
+
+                            <h3 class="card-title">Letlotlo Flour</h3>
+
+                            <p class="card-text">
+                                Letlotlo flour is produced in Lesotho.
+                                It is used to prepare food and provides
+                                energy to the body.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <section class="container mb-5">
+
+            <h2 class="text-center mb-4">
+                Frequently Asked Questions
+            </h2>
+
+            <div class="accordion" id="productAccordion">
+
+
+                
+                <div class="accordion-item">
+
+                    <h3 class="accordion-header">
+
+                        <button class="accordion-button"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#questionOne"
+                                aria-expanded="true"
+                                aria-controls="questionOne">
+
+                            Which food do you like to eat as a snack?
+
+                        </button>
+
+                    </h3>
+
+                    <div id="questionOne"
+                         class="accordion-collapse collapse show"
+                         data-bs-parent="#productAccordion">
+
+                        <div class="accordion-body">
+
+                            Mangangajane and monokotswai.
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            
+                <div class="accordion-item">
+
+                    <h3 class="accordion-header">
+
+                        <button class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#questionTwo"
+                                aria-expanded="false"
+                                aria-controls="questionTwo">
+
+                            Things to consider before using a product
+
+                        </button>
+
+                    </h3>
+
+                    <div id="questionTwo"
+                         class="accordion-collapse collapse"
+                         data-bs-parent="#productAccordion">
+
+                        <div class="accordion-body">
+
+                            Expiry date and ingredients.
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    
+    <footer class="footer">
+
+        <p>
+            &copy; 2026 Discover Lesotho Tourism. All rights reserved.
+        </p>
+
+    </footer>
+
+
+
+    <script>
+
+        
+        function searchProduct() {
+
+            let input = document.getElementById("productSearch").value.toLowerCase().trim();
+
+            let products = document.querySelectorAll(".product-item");
+
+            let message = document.getElementById("accommodationMessage");
+
+            let found = false;
+
+            products.forEach(function(place) {
+
+                let name = place.textContent.toLowerCase();
+
+                if (input !== "" && name.includes(input)) {
+
+                    place.style.display = "";
+
+                    found = true;
+
+                } else {
+
+                    place.style.display = "none";
+
+                }
+
+            });
+
+            if (found) {
+
+                message.innerHTML = "Product found!";
+
+                message.style.color = "green";
+
+            } else {
+
+                message.innerHTML = "Product not found!";
+
+                message.style.color = "red";
+
+            }
+
+        }
+
+
+        
+        function resetProductSearch() {
+
+            let input = document.getElementById("productSearch").value;
+
+            if (input.trim() === "") {
+
+                let products = document.querySelectorAll(".product-item");
+
+                products.forEach(function(place) {
+
+                    place.style.display = "";
+
+                });
+
+                document.getElementById("accommodationMessage").innerHTML = "";
+
+            }
+
+        }
+
+    </script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
